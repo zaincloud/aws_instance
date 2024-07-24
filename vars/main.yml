@@ -1,7 +1,7 @@
 ---
 
-AWS_ACCESS_KEY: AKIAXYKJVQEYUHVNMM2C
-AWS_SECRET_KEY: KHcFHVAEkH2bQh0C/PG8N1zpp1T3ZF/Klo88IB71
+AWS_ACCESS_KEY: # replace your aws access key
+AWS_SECRET_KEY: # replace your aws secret key
 gather_facts: False
 instance_type: t2.micro  # Change to your desired instance type
 image: ami-0a0e5d9c7acc336f1  # Replace with your desired AMI ID
