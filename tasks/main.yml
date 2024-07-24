@@ -1,0 +1,26 @@
+---
+
+- name: Launch an EC2 instance
+  amazon.aws.ec2_instance:
+    aws_access_key: "{{ AWS_ACCESS_KEY }}"
+    aws_secret_key: "{{ AWS_SECRET_KEY }}"
+    key_name: "{{ key_name }}"
+    instance_type: "{{ instance_type }}"
+    image_id: "{{ image }}"
+    wait: yes
+    region: "{{ region }}"
+    tags:
+      Name: "MyInstance-{{ item }}"
+  register: ec2
+  loop: "{{ range(1, Total_Instances+1)|list }}"
+
+- name: Extract details
+  set_fact:
+    instance_details: "{{ ec2 | json_query(jmesquery) }}"
+  vars:
+    jmesquery: 'results[*].instances[*].{Name: tags.Name, IP: public_ip_address}'
+
+- name: Debug the values
+  debug:
+    msg: "{{ instance_details }}"
+  
