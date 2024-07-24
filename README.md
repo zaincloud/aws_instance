@@ -2,10 +2,13 @@
 
 This playbook sets up an AWS instance using Ansible.
 
-```yaml
----
+## Requirements
 
+No special requirements; note that this role requires root access, so either run it in a playbook with a global `become: true`, or invoke the role in your playbook like:
+
+```yaml
 - hosts: localhost
-  become: true
   roles:
-    - aws_instance
+    - role: aws_instance
+      become: true
+
