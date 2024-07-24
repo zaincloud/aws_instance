@@ -1,11 +1,11 @@
 ---
 
-AWS_ACCESS_KEY: # replace your aws access key
-AWS_SECRET_KEY: # replace your aws secret key
+AWS_ACCESS_KEY: # Replace with your AWS access key
+AWS_SECRET_KEY: # Replace with your AWS secret key
 gather_facts: False
 instance_type: t2.micro  # Change to your desired instance type
 image: ami-0a0e5d9c7acc336f1  # Replace with your desired AMI ID
-region: us-east-1        # Change to your desired region
+region: us-east-1  # Change to your desired region
 security_group: sg-038aaa893cd9676ef  # Replace with your security group name
-key_name: cloud     # Replace with your key pair name
-Total_Instances: 2     
+key_name: cloud  # Replace with your key pair name
+Total_Instances: 2  # Specify the number of instances you want
