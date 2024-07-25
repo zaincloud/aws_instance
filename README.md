@@ -53,7 +53,3 @@ The main tasks for this role are defined in `tasks/main.yml`:
 For more details on the `amazon.aws.ec2_instance` module, refer to the [Ansible documentation](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_instance_module.html).
 ```
 
-Source: Conversation with Copilot, 7/25/2024
-(1) Basic writing and formatting syntax - GitHub Docs. https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax.
-(2) GitHub - zaincloud/aws_instance. https://github.com/zaincloud/aws_instance.
-(3) Quickstart for writing on GitHub - GitHub Docs. https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github.
