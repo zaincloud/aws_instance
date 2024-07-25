@@ -51,5 +51,3 @@ The main tasks for this role are defined in `tasks/main.yml`:
 
 ### Additional Information
 For more details on the `amazon.aws.ec2_instance` module, refer to the [Ansible documentation](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_instance_module.html).
-```
-
