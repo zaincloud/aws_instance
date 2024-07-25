@@ -37,11 +37,10 @@ Here is an example of how to use this role in a playbook:
       become: true
 ```
 
-### License
-This project is licensed under the MIT License.
-
 ### Author Information
-This role was created by [Your Name]. For any issues or contributions, please reach out via [Your Contact Information].
+This role was created by Mohammed Zainul Abid. For any issues or contributions, please reach out via 
+- ***Phone***: +91 7899266604.
+- ***Mail***: zaintheorem@gmail.com.
 
 ### Tasks
 The main tasks for this role are defined in `tasks/main.yml`:
